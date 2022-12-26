@@ -7,8 +7,7 @@
         <img src="{% static 'img/core-img/pizza.png' %}" alt="">
     </div>
 
-    {% include 'partials/_busca.html' %}
-
+   
     {% include 'partials/_menu.html' %}
 
     <!-- ##### Best Receipe Area Start ##### -->
@@ -34,6 +33,9 @@
                 </div>
                 {% endfor %}
                 {% else %}
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <p>Receita Não Encontrada</p>
+                    </div>
                 {% endif %}
             </div>
         </div>
